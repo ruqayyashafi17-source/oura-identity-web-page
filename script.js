@@ -1,10 +1,50 @@
+<<<<<<< HEAD
+document.getElementById('emailForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+=======
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+>>>>>>> 52d1a9886d42ccc995ef1fdfa18bd9bdbbb94ce5
 
+<<<<<<< HEAD
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    const statusBox = document.getElementById('statusMessage');
+    const submitBtn = document.getElementById('submitBtn');
+
+    // Loading State
+    statusBox.classList.remove('hidden', 'success');
+    statusBox.classList.add('loading');
+    statusBox.innerText = 'Sending message to AI Responder...';
+    submitBtn.disabled = true;
+
+    fetch('http://localhost:5678/webhook/oura-lead', {
+        method: 'POST',
+        headers: { 
+            'Content-Type': 'application/json' 
+        },
+        body: JSON.stringify({ name, email, subject, message })
+    })
+    .then(response => {
+        statusBox.classList.remove('loading');
+        statusBox.classList.add('success');
+        statusBox.innerText = `Thank you, ${name}! Your email has been received. Our AI responder is processing your request.`;
+        document.getElementById('emailForm').reset();
+        submitBtn.disabled = false;
+    })
+    .catch(error => {
+        statusBox.classList.remove('loading');
+        statusBox.innerText = 'Failed to send message. Please try again.';
+        submitBtn.disabled = false;
+    });
+});
+=======
 body {
     background-color: #0d0f17;
     color: #e2e8f0;
@@ -244,3 +284,5 @@ footer {
     font-size: 0.85rem;
     border-top: 1px solid #1e293b;
 }
+
+>>>>>>> 52d1a9886d42ccc995ef1fdfa18bd9bdbbb94ce5
