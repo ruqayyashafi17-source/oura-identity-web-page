@@ -1,1 +1,96 @@
-.......
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart Email Responder - Oura Identity</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar">
+        <div class="logo">Oura <span>Identity</span></div>
+        <nav>
+            <a href="#about">About AI</a>
+            <a href="#features">Features</a>
+            <a href="#contact" class="btn-nav">Try Live Demo</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">n8n + AI Powered</span>
+            <h1>Automate Your Agency Communications with <span>AI Email Responder</span></h1>
+            <p>Instant, smart, and context-aware responses to all client inquiries 24/7. Built for seamless workflow automation.</p>
+            <a href="#contact" class="btn-primary">Send Test Message</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Smart Automation Features</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="icon">⚡</div>
+                <h3>Instant Replies</h3>
+                <p>Responds to client queries in seconds using advanced AI models.</p>
+            </div>
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Google Sheets Sync</h3>
+                <p>Automatically logs every lead and query into Google Sheets for record keeping.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🤖</div>
+                <h3>Context Aware</h3>
+                <p>Understands client intent and drafts tailored professional responses automatically.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Form Section -->
+    <section id="contact" class="contact-section">
+        <div class="form-container">
+            <h2>Test AI Responder</h2>
+            <p>Send a test message below to experience the automated system.</p>
+            
+            <form id="emailForm">
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Project Inquiry / Question" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="4" placeholder="Ask about branding, services, or pricing..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+            </form>
+
+            <!-- Success / Response Output -->
+            <div id="statusMessage" class="status-box hidden"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Oura Identity Digital Brand Agency. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
