@@ -101,45 +101,6 @@ nav a:hover {
     background: #4f46e5;
 }
 
-/* Features */
-.features {
-    padding: 60px 8%;
-    text-align: center;
-}
-
-.features h2 {
-    font-size: 2rem;
-    margin-bottom: 40px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #334155;
-}
-
-.card .icon {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.card h3 {
-    margin-bottom: 10px;
-    color: #f8fafc;
-}
-
-.card p {
-    color: #94a3b8;
-    font-size: 0.95rem;
-}
-
 /* Contact Form */
 .contact-section {
     padding: 80px 20px;
