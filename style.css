@@ -140,11 +140,13 @@ nav a:hover {
     font-size: 0.95rem;
 }
 
-/* Contact Form */
+/* Contact Form Section (Fixed Box-Sizing & Card Display) */
 .contact-section {
     padding: 80px 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .form-container {
@@ -152,13 +154,16 @@ nav a:hover {
     padding: 40px;
     border-radius: 16px;
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
     border: 1px solid #334155;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .form-container h2 {
     margin-bottom: 10px;
     text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 .form-container p {
@@ -170,6 +175,7 @@ nav a:hover {
 
 .input-group {
     margin-bottom: 18px;
+    text-align: left;
 }
 
 .input-group label {
@@ -182,12 +188,14 @@ nav a:hover {
 .input-group input, 
 .input-group textarea {
     width: 100%;
-    padding: 10px 14px;
+    padding: 12px 14px;
     background: #0f172a;
     border: 1px solid #334155;
     border-radius: 6px;
     color: #fff;
     outline: none;
+    font-size: 0.95rem;
+    box-sizing: border-box; /* Form elements ko container ke bahaar nikalne se rokta hai */
 }
 
 .input-group input:focus, 
@@ -206,6 +214,7 @@ nav a:hover {
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 10px;
 }
 
 .btn-submit:hover {
