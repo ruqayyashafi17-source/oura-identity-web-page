@@ -19,7 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 18px 6%;
-    background: rgba(8, 9, 13, 0.75);
+    background: rgba(8, 9, 13, 0.85);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     position: sticky;
@@ -38,14 +38,17 @@ body {
     gap: 12px;
 }
 
-/* White background fix for JPEG logo */
+/* White Box Removal CSS Fix */
 .logo-img {
     height: 42px;
     width: auto;
     max-width: 150px;
     object-fit: contain;
     display: block;
-    mix-blend-mode: screen; /* Isse image ka white background background se blend ho kar disappear ho jayega */
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 50%;
 }
 
 .logo .sub-logo-text {
