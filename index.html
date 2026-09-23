@@ -3,83 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Smart Email Responder - Oura Identity Digital Brand Agency</title>
+    <title>Oura Identity | Next-Gen Digital Brand & AI Automation Agency</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Premium Font: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navbar -->
     <header class="navbar">
-        <div class="logo">Oura <span>Identity</span></div>
+        <div class="logo">
+            <span class="logo-mark">O</span> OURA <span>IDENTITY</span>
+        </div>
         <nav>
-            <a href="#about">About AI</a>
-            <a href="#features">Features</a>
-            <a href="#contact" class="btn-nav">Try Live Demo</a>
+            <a href="#services">Services</a>
+            <a href="#features">AI Automation</a>
+            <a href="#demo" class="btn-nav">Test Live AI Demo</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <span class="badge">n8n + AI Powered</span>
-            <h1>Automate Your Agency Communications with <span>AI Email Responder</span></h1>
-            <p>Instant, smart, and context-aware responses to all client inquiries 24/7. Built for seamless workflow automation.</p>
-            <a href="#contact" class="btn-primary">Send Test Message</a>
+        <div class="badge">
+            <span class="badge-dot"></span> Intelligent Brand Automation
+        </div>
+        <h1>Elevate Your Brand with <span>AI-Powered Precision</span></h1>
+        <p>Oura Identity crafts distinctive digital branding and deploys enterprise-grade AI email workflows to scale your client communications effortlessly 24/7.</p>
+        
+        <div class="hero-actions">
+            <a href="#demo" class="btn-primary">Experience Live AI Demo →</a>
+            <a href="#services" class="btn-secondary">Explore Services</a>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <h2>Smart Automation Features</h2>
+    <!-- Agency Services / Value Proposition -->
+    <section id="services" class="features">
+        <div class="section-header">
+            <h2>Agency Capabilities</h2>
+            <p>Combining visual identity design with cutting-edge workflow automation</p>
+        </div>
+
         <div class="grid">
             <div class="card">
+                <div class="icon">✨</div>
+                <h3>Brand Strategy & Identity</h3>
+                <p>Tailored logo design, visual branding, and strategic positioning to make your brand stand out in high-value markets.</p>
+            </div>
+            <div class="card">
                 <div class="icon">⚡</div>
-                <h3>Instant Replies</h3>
-                <p>Responds to client queries in seconds using advanced AI models.</p>
+                <h3>Smart AI Auto-Response</h3>
+                <p>Instant, context-aware AI email response engine trained to answer client inquiries in seconds with high precision.</p>
             </div>
             <div class="card">
                 <div class="icon">📊</div>
-                <h3>Google Sheets Sync</h3>
-                <p>Automatically logs every lead and query into Google Sheets for record keeping.</p>
-            </div>
-            <div class="card">
-                <div class="icon">🤖</div>
-                <h3>Context Aware</h3>
-                <p>Understands client intent and drafts tailored professional responses automatically.</p>
+                <h3>Automated Lead Logging</h3>
+                <p>Seamlessly captures client submissions and logs every lead directly into Google Sheets for instant pipeline updates.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section id="contact" class="contact-section">
+    <!-- Live Interactive Demo Section -->
+    <section id="demo" class="contact-section">
         <div class="form-container">
-            <h2>Oura Identity Digital Brand Agency Email Responder</h2>
-            <p>Send a test message below to experience the automated system.</p>
+            <div class="form-header">
+                <span class="sub-badge">Live System Test</span>
+                <h2>Interactive AI Email Demo</h2>
+                <p>Send a test message to experience Oura Identity's automated response pipeline in real-time.</p>
+            </div>
             
             <form id="emailForm">
-                <div class="input-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
-                </div>
-                
-                <div class="input-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" placeholder="Enter your email address" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" placeholder="Project Inquiry / Question" required>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="e.g. Sarah Jenkins" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="email">Work Email</label>
+                        <input type="email" id="email" placeholder="sarah@company.com" required>
+                    </div>
                 </div>
 
                 <div class="input-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" rows="4" placeholder="Ask about branding, services, or pricing..." required></textarea>
+                    <label for="subject">Inquiry Subject</label>
+                    <input type="text" id="subject" placeholder="Branding & Design Proposal Request" required>
                 </div>
 
-                <button type="submit" class="btn-submit" id="submitBtn">Send Message</button>
+                <div class="input-group">
+                    <label for="message">Project Requirements / Questions</label>
+                    <textarea id="message" rows="4" placeholder="Describe your project, timeline, or agency questions..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit" id="submitBtn">
+                    <span>Send Message to AI Engine</span>
+                </button>
             </form>
 
             <!-- Status Message Output -->
@@ -87,8 +106,12 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2026 Oura Identity Digital Brand Agency. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-logo">OURA <span>IDENTITY</span></div>
+            <p>© 2026 Oura Identity Digital Brand Agency. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
