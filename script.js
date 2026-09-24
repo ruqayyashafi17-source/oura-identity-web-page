@@ -15,7 +15,7 @@ document.getElementById('emailForm').addEventListener('submit', function(e) {
     submitBtn.disabled = true;
 
     // Yahan apna n8n Production Webhook URL lagayein
-    fetch('http://localhost:5678/webhook/oura-lead', {
+    fetch('http://localhost:5678/webhook-test/oura-lead', {
         method: 'POST',
         headers: { 
             'Content-Type': 'application/json' 
